@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu1.master.cs" Inherits="latihanquiz1.View.Menu1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../CSS/navbarStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class ="nav">
+            <asp:Button onClick="btnHome_Click" ID="mukicikBtn" runat="server" Text="Mukicik" />
+            <asp:Button onClick="btnHome_Click" ID="btnHome" runat="server" Text="Home" />
+            <asp:Button onClick="btnProd_Click" ID="btnProd" runat="server" Text="Product" />
+            <asp:Button onClick="btnReg_Click" ID="btnReg" runat="server" Text="Register" />
+            <asp:Button onClick="btnLog_Click" ID="btnLog" runat="server" Text="Login" />
+        </div>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="contentBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class ="footer">
+            Copyright &copy; SLC 2021
+        </div>
+    </form>
+</body>
+</html>
