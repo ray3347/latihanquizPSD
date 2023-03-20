@@ -92,11 +92,15 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="View\Home.aspx" />
+    <Content Include="View\InsertProduct.aspx" />
     <Content Include="View\Login.aspx" />
+    <Content Include="View\ModifyProduct.aspx" />
+    <Content Include="View\Product.aspx" />
     <Content Include="View\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\ProductFactory.cs" />
     <Compile Include="Factory\UserFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -124,6 +128,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\DatabaseSingleton.cs" />
+    <Compile Include="Repository\ProductRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="View\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -131,6 +136,13 @@
     </Compile>
     <Compile Include="View\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\InsertProduct.aspx.cs">
+      <DependentUpon>InsertProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\InsertProduct.aspx.designer.cs">
+      <DependentUpon>InsertProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -152,6 +164,20 @@
     </Compile>
     <Compile Include="View\Menu2.Master.designer.cs">
       <DependentUpon>Menu2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\ModifyProduct.aspx.cs">
+      <DependentUpon>ModifyProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ModifyProduct.aspx.designer.cs">
+      <DependentUpon>ModifyProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

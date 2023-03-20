@@ -14,6 +14,8 @@
             <asp:Button onClick="btnHome_Click" ID="mukicikBtn" runat="server" Text="Mukicik" />
             <asp:Button onClick="btnHome_Click" ID="btnHome" runat="server" Text="Home" />
             <asp:Button onClick="btnProduct_Click" ID="btnProduct" runat="server" Text="Product" />
+            <asp:Button onClick="btnInsertProduct_Click" ID="Button1" runat="server" Text="Insert Product" />
+            <asp:Button onClick="btnUpdateDeleteProduct_Click" ID="Button2" runat="server" Text="Update/Delete Product" />
             <asp:Button onClick="btnLogout_Click" ID="btnLogout" runat="server" Text="Logout" />
             
         </div>
@@ -24,7 +26,7 @@
         </div>
 
         <div class ="footer">
-            Copyright &copy; SLC 2021
+            &copy; 2016 - Mukicik
         </div>
     </form>
 </body>

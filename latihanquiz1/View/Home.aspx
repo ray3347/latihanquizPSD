@@ -7,6 +7,18 @@
     <div>
         <asp:Button ID="registerBtn" runat="server" Text="Be a New Member" OnClick="registerBtn_Click" />
     </div>
+    <div>
+        <table>
+         <%foreach (var p in products)
+                { %>
+                    <tr>
+                        <td><%= p.ProductName %></td>
+                        <td><%= p.ProductRating %></td>
+                        <td><%= p.ProductPrice %></td>
+                    </tr>
+            <%  } %>
+    </table>
+    </div>
  
 </asp:Content>
 

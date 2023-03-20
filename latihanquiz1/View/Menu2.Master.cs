@@ -29,7 +29,17 @@ namespace latihanquiz1.View
 
         protected void btnProduct_Click(object sender, EventArgs e)
         {
+            Response.Redirect("Product.aspx");
+        }
 
+        protected void btnInsertProduct_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InsertProduct.aspx");
+        }
+
+        protected void btnUpdateDeleteProduct_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ModifyProduct.aspx");
         }
     }
 }
